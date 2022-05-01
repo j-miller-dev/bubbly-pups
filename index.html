@@ -11,7 +11,14 @@
       sizes="32x32"
       href="./Bubbly Pups - Logo Library/PNG FIles/BubblyPups_Icon(LBG).png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>BubblyPups | Making your pups smile</title>
   </head>
@@ -29,21 +36,21 @@
       <div class="bubble"></div>
     </div>
   </section>
-  <body>
-    <div class="flow container flex">
+  <body class="flex h-screen">
+    <div class="container m-auto flex content-center place-items-center flex-col sm:max-w-lg">
       <img
         src="./Bubbly Pups - Logo Library/PNG FIles/BubblyPups_Icon(LBG).png"
         alt="logo"
-        class="logo"
+        class="p-8 pb-2 flex flex-auto max-w-sm"
       />
       <img
         src="./Bubbly Pups - Logo Library/PNG FIles/BubblyPups_Text(LBG).png"
         alt="heading"
-        class="heading"
+        class="p-8 pt-2 flex flex-auto "
       />
-      <div class="button-container flex">
-        <button class="btn enter"><a href="home.html">enter site</a></button>
-        <button class="btn book">
+      <div class="container mx-auto flex flex-auto justify-center gap-4">
+        <button class="bg-pink-200 rounded-lg flex items-center space-x-3 px-8 py-4 font-bold text-black shadow-xl hover:animate-pulse"><a href="home.html">enter site</a></button>
+        <button class="bg-pink-200 rounded-lg flex items-center space-x-3 px-8 py-4 font-bold text-black shadow-xl hover:animate-pulse">
           <a href="https://simplybook.me/en/">book now</a>
         </button>
       </div>
