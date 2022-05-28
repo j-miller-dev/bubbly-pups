@@ -1,22 +1,27 @@
 {
   "name": "bubblypups.com.au",
   "version": "1.0.0",
-  "description": "An awesome dog grooming website!",
-  "main": "tailwind.config.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./style.css -o ./tailwind.css -w"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/j-miller-dev/bubbly-pups.git"
   },
-  "author": "JM",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/j-miller-dev/bubbly-pups/issues"
   },
   "homepage": "https://github.com/j-miller-dev/bubbly-pups#readme",
+  "dependencies": {
+    "sass": "^1.52.1"
+  },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.0"
+    "parcel-bundler": "^1.12.5"
   }
 }
