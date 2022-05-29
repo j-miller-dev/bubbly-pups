@@ -106,19 +106,36 @@ input {
   border-radius: 0;
 }
 
-.enter {
-  max-width: 100vw;
-  max-height: 100vh;
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
-img > {
-  width: 50%;
+.btn {
+  background: rgba(241, 223, 238, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
+  padding: 1rem;
+  background-color: #fff;
 }
 
 /* The Bubbles */
 .sticky {
   max-width: 100vw;
   max-height: 100vh;
+}
+
+img {
+  max-width: 400px;
 }
 
 .bubbles {
@@ -136,7 +153,7 @@ img > {
   bottom: -100px;
   width: 40px;
   height: 40px;
-  background: rgba(212, 157, 203, 0.6235294118);
+  background: #ebb9d7;
   border-radius: 50%;
   opacity: 0.5;
   animation: rise 10s infinite ease-in;
@@ -232,6 +249,67 @@ img > {
   100% {
     bottom: 1080px;
     transform: translateX(-200px);
+  }
+}
+.glass-container {
+  background: rgba(241, 223, 238, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 1000px;
+  max-height: 600px;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 900px) {
+  .glass-container {
+    grid-template-columns: 1fr;
+    max-height: 800px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.enter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.enter-logo {
+  width: 100%;
+  padding: 2rem;
+  padding-right: 0rem;
+}
+@media screen and (max-width: 900px) {
+  .enter-logo {
+    padding: 1rem;
+  }
+}
+.enter-content {
+  padding: 2rem;
+  padding-left: 0rem;
+}
+@media screen and (max-width: 900px) {
+  .enter-content {
+    padding: 1rem;
+  }
+}
+
+.buttons {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 900px) {
+  .buttons {
+    margin-top: 2rem;
   }
 }
 

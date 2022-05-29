@@ -1,0 +1,8 @@
+.btn {
+  @include glassmorphism;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: $black;
+  padding: 1rem;
+  background-color: $white;
+}

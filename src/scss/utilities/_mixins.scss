@@ -1,0 +1,40 @@
+// Media Queries | Breakpoints
+@mixin devices($breakpoint) {
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 481px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 680px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media screen and (min-width: 680px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop-large {
+    @media screen and (min-width: 900px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop-extra-large {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+// Layout & design
+@mixin flex($direction, $justifyContent) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: center;
+}
