@@ -1,0 +1,46 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  height: auto;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: $weight-extraBold;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.nav {
+  @include glassmorphism-navbar;
+  max-width: 50%;
+  text-transform: uppercase;
+  font-weight: $weight-medium;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 4rem;
+  margin-left: 4rem;
+
+  &:first-child {
+    padding-left: 2rem;
+  }
+
+  & > * {
+    padding-right: 2rem;
+  }
+  & .btn {
+    @include glassmorphism-navbar__btn;
+
+    font-weight: 800;
+    color: $white;
+  }
+}

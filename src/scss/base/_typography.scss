@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;800&family=Rajdhani:wght@400;700&display=swap");
+
+h1,
+h2,
+h3,
+body {
+  font-family: $font-family;
+}
+
+// Heading styles
+.heading-1 {
+  font-weight: $weight-extraBold;
+  font-size: 2.8rem; // 64px
+  line-height: 4.5rem; // 72px
+  letter-spacing: -0.08;
+  color: $black;
+
+  // Tablet
+
+  // Desktop
+}
+
+.heading-2 {
+  font-weight: $weight-extraBold;
+  font-size: 1.5rem; // 64px
+  line-height: 1.5rem; // 72px
+  letter-spacing: -0.5;
+  color: $white;
+}

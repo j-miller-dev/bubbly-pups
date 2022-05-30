@@ -1,0 +1,22 @@
+.card {
+  @include glassmorphism-card();
+  max-width: 300px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__image img {
+    max-width: 200px;
+  }
+}
+
+.card-2 {
+  background: $light-pink;
+}
+
+.card-3 {
+  background: $light-purple;
+}
