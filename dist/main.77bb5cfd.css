@@ -297,7 +297,7 @@ img {
   bottom: -100px;
   width: 40px;
   height: 40px;
-  background: #fff;
+  background: #ebb9d7;
   border-radius: 50%;
   opacity: 0.5;
   animation: rise 10s infinite ease-in;
@@ -423,14 +423,13 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 100vh;
-  background-color: #ebb9d7;
+  background-color: #fff;
 }
 .enter-logo {
   width: 100%;
   padding: 2rem;
-  padding-right: 0rem;
 }
 @media screen and (max-width: 900px) {
   .enter-logo {
@@ -440,6 +439,9 @@ img {
 .enter-content {
   padding: 2rem;
   padding-left: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
 }
 @media screen and (max-width: 900px) {
   .enter-content {
